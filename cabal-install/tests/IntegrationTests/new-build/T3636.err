@@ -1,1 +1,1 @@
-BadPackageLocations [BadLocGlobEmptyMatch "./*.cabal"]
+Could not find a cabal.project or *.cabal file

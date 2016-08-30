@@ -537,8 +537,11 @@ data ProjectPackageLocation =
 newtype BadPackageLocations = BadPackageLocations [BadPackageLocation]
   deriving (Show, Typeable)
 
-instance Exception BadPackageLocations
---TODO: [required eventually] displayException for nice rendering
+instance Exception BadPackageLocations where
+  displayException (BadPackageLocations [BadLocGlobEmptyMatch "./*.cabal"])
+    = "Could not find a cabal.project or *.cabal file"
+  displayException e = show e
+--TODO: [required eventually] extend displayException for nice rendering of other cases too
 --TODO: [nice to have] custom exception subclass for Doc rendering, colour etc
 
 data BadPackageLocation
