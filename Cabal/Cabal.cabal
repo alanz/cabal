@@ -312,6 +312,7 @@ library
     Distribution.Compat.Semigroup
     Distribution.Compat.Time
     Distribution.Compiler
+    Distribution.ImplicitConstraints
     Distribution.InstalledPackageInfo
     Distribution.License
     Distribution.Make
