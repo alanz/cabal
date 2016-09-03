@@ -18,7 +18,6 @@ module Distribution.ImplicitConstraints (
 import Prelude ()
 import Distribution.Compat.Prelude
 
-import Data.Functor.Identity
 import qualified Data.Map as Map
 import Distribution.Compiler
 import Distribution.Package
